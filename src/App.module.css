@@ -1,0 +1,35 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+aside,
+nav,
+footer,
+header,
+section {
+   display: block;
+}
+html,
+body {
+   color: #000;
+   font-size: 0.875rem;
+   font-family: "Noto Sans Display";
+   font-weight: 400;
+   line-height: normal;
+   min-width: 320px;
+   position: relative;
+}
+.app__wrapper {
+   min-height: 100%;
+   width: 100%;
+   overflow: clip;
+}
+[class*="__container"] {
+   max-width: 82%;
+   padding-left: 0.9375rem;
+   padding-right: 0.9375rem;
+   margin: 0 auto;
+   background-color: yellow;
+}

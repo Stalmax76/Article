@@ -1,0 +1,23 @@
+// ============================= fonts
+
+mainTitleFont: "Train One";
+titleCardsFont: "Noto Serif";
+baseFont: "Noto Sans Display";
+
+baseFontSize = 14px;
+
+maxWidthWindow = 1920px;
+
+container = 1538px + 30(paddings) = 1568px;
+
+//REM
+@function rem($px){
+$result:math.div($px,16)+rem;
+return $result;
+}
+
+//EM
+@function em($px, $current:16){
+$result:math.div($px, $current)+ em;
+return $result;
+}

@@ -1,0 +1,20 @@
+.button {
+   padding: 9px 40px;
+   background-color: #2988ca;
+   display: inline-block;
+   color: #ffffff;
+   border-radius: 5px;
+   min-width: 236px;
+   height: 42px;
+
+   &:hover {
+      background-color: #0f5f9c;
+   }
+   a {
+      font-size: 16px;
+      line-height: 1.5;
+      font-feature-settings:
+         "clig" off,
+         "liga" off;
+   }
+}
