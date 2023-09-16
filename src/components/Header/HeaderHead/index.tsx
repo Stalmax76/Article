@@ -1,5 +1,5 @@
 import styles from './style.module.scss';
-import Burger from '../../UI/Burger';
+import ActiveBlock from './ActiveBlock/';
 import MainTitle from '../../UI/MainTitle';
 import Button from '../../UI/Button';
 
@@ -9,7 +9,7 @@ const HeaderHead = () => {
 
   return (
     <div className={styles.headerHead}>
-      <Burger />
+      <ActiveBlock />
       <MainTitle mainTitleText={mainTitleText} />
       <Button buttonText={buttonText} />
     </div>

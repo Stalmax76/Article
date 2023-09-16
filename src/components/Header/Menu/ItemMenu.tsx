@@ -6,7 +6,7 @@ interface IMenuItem {
 }
 
 function ItemMenu({ text, id }: IMenuItem) {
-  console.log(JSON.stringify({ text, id }));
+  // console.log(JSON.stringify({ text, id }));
   return (
     <div className={styles.item}>
       <a href={id} className={styles.item__link}>
