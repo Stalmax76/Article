@@ -1,18 +1,30 @@
 .weather {
+   position: relative;
    width: 100%;
    padding: 2px 4px;
    height: 42px;
+   font-size: 16px;
    display: flex;
    column-gap: 20px;
    align-items: center;
 
    &__icon {
       display: block;
+      align-items: center;
+      height: 44px;
       img {
          height: 100%;
       }
    }
    &__temperature {
       font-weight: 800;
+   }
+   .isLoading {
+      height: 44px;
+      padding: 0px;
+
+      img {
+         height: 100%;
+      }
    }
 }
