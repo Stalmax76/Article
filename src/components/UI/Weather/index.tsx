@@ -43,10 +43,9 @@ function Weather() {
   }
 
   if (dataWeather) {
-    console.log(dataWeather);
     getWeather(dataWeather);
   }
-  console.log({ weatherIcon }, { weatherStatus }, { temperatura });
+  // console.log({ weatherIcon }, { weatherStatus }, { temperatura });
   return (
     <div className={styles.weather}>
       {isLoading ? (

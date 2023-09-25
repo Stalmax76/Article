@@ -6,6 +6,8 @@
    border-radius: 5px;
    min-width: 236px;
    height: 42px;
+   text-align: center;
+   cursor: pointer;
 
    &:hover {
       background-color: #0f5f9c;
@@ -16,5 +18,21 @@
       font-feature-settings:
          "clig" off,
          "liga" off;
+   }
+}
+@media (max-width: 767.98px) {
+   .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+         font-size: 14px;
+         line-height: 1;
+      }
+   }
+}
+@media (max-width: 550px) {
+   .button {
+      width: 100%;
    }
 }

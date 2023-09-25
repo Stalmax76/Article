@@ -13,12 +13,12 @@
 }
 @media (max-width: 767px) {
    .mainTitle {
-      font-size: calc(32px + 28 * ((100vw - 320px) / 1568));
+      font-size: calc(34px + 26 * ((100vw - 320px) / 1568));
    }
 }
 @media (min-width: 767px) {
    .mainTitle {
-      font-size: calc(32px + 28 * (100vw / 1568));
+      font-size: calc(34px + 26 * (100vw / 1568));
    }
 }
 

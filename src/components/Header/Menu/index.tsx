@@ -14,9 +14,11 @@ const menuItems = [
   'Інше',
 ];
 
-const Menu = () => {
+const Menu = (props: { isOpen: boolean }) => {
+  const { isOpen } = props;
+
   return (
-    <div className={styles.menu}>
+    <div className={`${isOpen ? styles.active : styles.menu}`}>
       {menuItems.map((i) => {
         const key = uuidv4();
         return <ItemMenu text={i} key={key} id={key} />;

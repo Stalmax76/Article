@@ -2,4 +2,19 @@
    display: flex;
    align-items: center;
    column-gap: 35px;
+   height: 44px;
+}
+@media (max-width: 1200px) {
+   .activeBlock {
+      column-gap: 30px;
+   }
+}
+
+@media (max-width: 550px) {
+   .activeBlock {
+      margin: 0 auto;
+      width: 70%;
+      justify-content: space-between;
+      align-items: center;
+   }
 }
