@@ -9,7 +9,7 @@ const Header = () => {
     <div className={styles.header}>
       <div className={styles.header__container}>
         <HeaderHead onClick={() => setIsOpen(!isOpen)} isOpen={isOpen} />
-        <Menu isOpen={isOpen} />
+        <Menu isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} />
       </div>
     </div>
   );
