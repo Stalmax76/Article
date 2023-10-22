@@ -1,28 +1,20 @@
 import Title from '../UI/Title/';
 import Date from '../UI/Date';
+import type { ICard } from '@types';
 
 import styles from './styles.module.scss';
 
-function CardWithPhoto({
-  imgUrl,
-  textTitle,
-  textContent,
-  date,
-}: {
-  imgUrl: string;
-  textTitle: string;
-  textContent: string;
-  date: string;
-}) {
+function CardWithPhoto(card: ICard) {
+  const { title, imgUrl, text, date } = card;
   return (
     <article className={styles.cardWithPhoto}>
       <div className={styles.cardWithPhoto__img}>
         <img src={imgUrl} />
       </div>
       <div className={styles.cardWithPhoto__content}>
-        <Title text={textTitle} />
+        <Title text={title} />
         <div className={styles.cardWithPhoto__text}>
-          <p>{textContent}</p>
+          <p>{text}</p>
         </div>
         <Date date={date} />
       </div>

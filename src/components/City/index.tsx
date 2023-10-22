@@ -1,47 +1,29 @@
-import CardWithPhoto from '../CardWithPhoto';
+import BigCard from 'components/BigCard';
+import BlockCardsWithPhoto from 'components/BlockCardsWithPhoto';
+import BlockCardsText from 'components/BlockCardsText';
 import styles from './style.module.scss';
-import imgUrl_1 from '../../assets/img/city/01.jpg';
-import imgUrl_2 from '../../assets/img/city/02.jpg';
-import imgUrl_3 from '../../assets/img/city/03.jpg';
-
-const textTitle_1 =
-  'Вінницький спортсмен став Чемпіоном України з кульової стрільби';
-const textTitle_2 =
-  'У територіальній обороні має бути до двох мільйонів громадян';
-const textTitle_3 =
-  'На Вінниччині подружжя побудувало двоповерховий будинок із солом’яних тюків';
-const textContent_1 =
-  'Вінницький спортсмен Олег Царьков виборов золоту медаль на Чемпіонаті України з кульової стрільби.';
-const textContent_2 =
-  'В Україні планують збільшити чисельність осіб у складі Сил територіальної оборони ЗСУ, а кількість членів територіальної...';
-const textContent_3 =
-  'Вже більше 8 років подружжя Олени та Олександра Кушпітів з села...';
-const date_1 = '12.02.2022, 09:46';
-const date_2 = '12.02.2022, 09:37';
-const date_3 = '11.02.2022, 17:00';
 
 function City() {
   return (
     <section className={styles.city}>
-      <CardWithPhoto
-        imgUrl={imgUrl_1}
-        textTitle={textTitle_1}
-        textContent={textContent_1}
-        date={date_1}
+      <BlockCardsWithPhoto />
+      <BigCard
+        imgUrl={bigCardUrl}
+        title={bigCardTitle}
+        date={bigCardDate}
+        text={bigCardText}
       />
-      <CardWithPhoto
-        imgUrl={imgUrl_2}
-        textTitle={textTitle_2}
-        textContent={textContent_2}
-        date={date_2}
-      />
-      <CardWithPhoto
-        imgUrl={imgUrl_3}
-        textTitle={textTitle_3}
-        textContent={textContent_3}
-        date={date_3}
-      />
+      <BlockCardsText />
     </section>
   );
 }
 export default City;
+
+// data for BigCard
+import bigCardUrl from '../../assets/img/city/Big04.jpg';
+
+const bigCardTitle =
+  'У Вінниці на території зоопарку створили романтичну фотозону';
+const bigCardText =
+  'До Дня закоханих Подільський зоопарк відкрив для відвідувачів романтичну фотозону. Нову фотолокацію розмістили біля Садиби Подільського чарівника. «Гадаємо, цей романтичний куточок стане улюбленим місцем тих, у чиїх серцях живе любов. Відвідати фотолокацію можна 12, 13 та 14 лютого. До Дня закоханих на гостину до Подільського зоопарку завітав і Купідон, чиї золоті стріли, як відомо, здатні викликати любов.';
+const bigCardDate = '12 лютого 2022, 14:08';

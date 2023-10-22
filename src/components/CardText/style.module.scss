@@ -1,0 +1,15 @@
+.cardText {
+   width: 100%;
+   border-bottom: 1px solid #e0e0e0;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   &:first-child {
+      padding-top: 0px;
+   }
+}
+
+@media (max-width: 470px) {
+   .cardText {
+      padding: 0 5px;
+   }
+}

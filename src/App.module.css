@@ -31,7 +31,7 @@ body {
    padding-left: 0.9375rem;
    padding-right: 0.9375rem;
    margin: 0 auto;
-   background-color: yellow;
+   /* background-color: yellow; */
 }
 @media (max-width: 767.98px) {
    [class*="__container"] {
