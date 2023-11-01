@@ -6,14 +6,20 @@ import styles from './style.module.scss';
 function City() {
   return (
     <section className={styles.city}>
-      <BlockCardsWithPhoto />
-      <BigCard
-        imgUrl={bigCardUrl}
-        title={bigCardTitle}
-        date={bigCardDate}
-        text={bigCardText}
-      />
-      <BlockCardsText />
+      <div className={styles.city__cardsWithPhoto}>
+        <BlockCardsWithPhoto />
+      </div>
+      <div className={styles.city__bigCard}>
+        <BigCard
+          imgUrl={bigCardUrl}
+          title={bigCardTitle}
+          date={bigCardDate}
+          text={bigCardText}
+        />
+      </div>
+      <div className={styles.city__cardsText}>
+        <BlockCardsText />
+      </div>
     </section>
   );
 }

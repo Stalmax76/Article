@@ -1,15 +1,15 @@
 .cardText {
-   width: 100%;
+   max-width: 23.125rem;
    border-bottom: 1px solid #e0e0e0;
-   padding-top: 5px;
-   padding-bottom: 5px;
+   padding-top: 0.3125rem;
+   padding-bottom: 0.3125rem;
    &:first-child {
       padding-top: 0px;
    }
 }
 
-@media (max-width: 470px) {
+@media (max-width: 29.375rem) {
    .cardText {
-      padding: 0 5px;
+      padding: 0 0.3125rem;
    }
 }
